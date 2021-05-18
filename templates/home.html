@@ -1,0 +1,56 @@
+<html>
+<head> <title> Django Assignment </title> </head>
+<body>
+
+
+ <strong> Django Rest Framework Assignment  </strong>
+<br>
+1. Register an employee ( By Admin ) ( POST )
+<br>
+2. Login as employee ( POST )
+<br>
+3. Update employee details ( by employee ) ( PUT/PATCH )
+<br>
+4. Get paginated list of employees ( Ascending order by creation date ) ( GET )
+<br>
+<br>
+
+<strong>  Solution -   </strong> <br>
+1.  To register an employe(only Admin can register new employees) - <br>
+&nbsp; &nbsp; &nbsp; &nbsp;
+a. Login in as admin -
+        <a href="http://pragatitask.pythonanywhere.com/api/login/">  http://pragatitask.pythonanywhere.com/api/login/ </a> <br>
+&nbsp; &nbsp; &nbsp; &nbsp;
+b. Go to - <a href="http://pragatitask.pythonanywhere.com/api/employee/register"> http://pragatitask.pythonanywhere.com/api/department/register  </a> <br>
+&nbsp; &nbsp; &nbsp; &nbsp;
+c. Post data in this format - <br>
+     {
+    <br>   "username" : "WIZ04Ritu",
+    <br>   "password" : "User1234",
+    <br>    "email" : "ritu@gmail.com",
+    <br>    "name" :"Ritu Kapoor",
+    <br>     "dept": 1
+    <br>
+    <br>    "join": "2021-05-18",
+    <br>    "dob": "1998-12-25",
+    <br>    "phone": "1234554321",
+    <br>    "address": "Adarsh Nagar, Jaipur", <br>
+    }<br>
+
+    (Last 4 are optional) <br><br>
+
+2.   Employee can log in using -
+ <a href="http://pragatitask.pythonanywhere.com/api/login/">  http://pragatitask.pythonanywhere.com/api/login/ </a> <br><br>
+3.   Employee can update (only) their details by using -
+<a href="http://pragatitask.pythonanywhere.com/api/employee/update" > http://pragatitask.pythonanywhere.com/api/employee/update </a><br>
+eg - {"phone":"8945735350"} will update phone number.
+    <br> <br>
+4.   View Complete Employee list at (Pagination-5) -
+<a href="http://pragatitask.pythonanywhere.com/api/employee/list"> http://pragatitask.pythonanywhere.com/api/employee/list </a>
+    <br> <br>
+5.   Admin can add/view department by using -
+<a href="http://pragatitask.pythonanywhere.com/api/department/list/"> http://pragatitask.pythonanywhere.com/api/department/list/  </a>
+
+
+</body>
+</html>
